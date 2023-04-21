@@ -1,7 +1,7 @@
 import Hero from "./Hero"
 function Home({products, keyWord}){
 
-    const title = `You Are Searching for ${keyWord}`
+    const title = `Welcome To Prime Products`
 
     const Products = ({item}) => {
         return(
@@ -13,7 +13,7 @@ function Home({products, keyWord}){
             <p className="card-text">{item.description}</p>
             <p className="card-text">${item.price}</p>
             <p className="rating">Rating: {item.rating.rate}</p>
-            <a href="/" className="btn btn-primary">Add to Cart</a>
+            <a href="/saved-items" className="btn btn-primary">Add to Cart</a>
         </div>
         </div>
         )
